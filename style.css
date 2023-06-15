@@ -1,0 +1,708 @@
+*{box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none}
+li{font-size: 1em;}
+
+.color-bodeg{ color: rgb(177, 145, 4);
+    
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:rgb(177, 145, 4)
+}
+
+button:hover{
+    background-color:rgb(177, 145, 4)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(235, 235, 235);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bolder;
+    color: rgb(177, 145, 4);
+    font-size: 2.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 25%;
+    margin: 0;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+header a:hover{
+    color: rgb(177, 145, 4);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url("media/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: aliceblue;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#intro .container{
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+#Atajo{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Atajo .container{
+    padding: 100px 0px;
+    
+ 
+}
+
+
+
+#Atajo h2{
+    margin-top: 0;
+    font-size: 3.5em;
+   
+}
+
+#Atajo p{
+    display: none;
+    font-size: 1.5em;
+    color: white;
+
+
+
+}
+
+.textitos:first-child{ 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/copa-con-vino.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+
+
+    
+}
+
+.textitos:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/vinedo-con-vino.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+
+}
+
+.textitos:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/uvas.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 25px;
+    border-radius: 15px;
+
+}
+
+#vinos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#vinos .container{
+    padding: 200px 0px;
+    font-style: oblique;
+    
+ 
+}
+
+#vinos .container h3{
+    font-size: 2.6em;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+#vinos h2{
+    margin-top: 0;
+    font-size: 3em;
+    font-style: oblique;
+    
+   
+}
+
+
+
+
+.vino:first-child{ 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/fotovino1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    margin: 25px;
+    border-radius: 10px;
+
+
+    
+}
+
+.vino:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/fotovino2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    margin: 25px;
+    border-radius: 10px;
+
+}
+
+.vino:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    , url("media/fotovino3.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.vino:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url("media/fotovino4.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px; 
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.vino:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url("media/fotovino5.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px; 
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.vino:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ), url("media/fotovino6.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 150px; 
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+#caracteristicas .container{
+    text-align: left;
+    padding: 150px 12px;
+    background-color: rgb(235, 235, 235);
+
+}
+
+#caracteristicas h2{
+    font-size: bold;
+    font-size: 30px;
+    padding-left: 35px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+    list-style: circle;
+    font-style: italic;
+    
+
+}
+
+#presentacion3 li{
+    margin: 15px 0px;
+    font-weight: bold;
+    list-style: circle;
+    font-style: italic;
+}
+
+#reserva-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#reserva-ya h2{
+    font-size: 5em;
+}
+
+#reserva-ya button {
+    font-size: 2.5em;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer .container{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 7px;
+
+}
+
+footer p{
+    margin: 0;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    
+    
+}
+
+#intro .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/bodega.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+@media (min-width: 720px){
+    
+    header{
+        position: fixed;
+        width: 100%;
+
+
+    }
+    
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+        
+
+    }
+
+    #intro .container{
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    #intro .texto{
+        padding: 0px,30px;
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    
+
+    #intro .h2{
+        margin-top: 0;
+
+    }
+
+   
+
+    #presentacion .container{
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+
+
+    }
+
+    #presentacion .texto{
+        padding: 0px,30px;
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #presentacion .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/cosecha.jpg");
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        width: 50%;
+        padding-top: 300px;
+        border-radius: 15px;
+        
+        
+    }
+
+    #presentacion2 .container {
+        display: flex;
+        justify-content: center;
+      
+    }
+      
+    #presentacion2 .texto {
+        padding: 0px 30px;
+        width: 50%;
+        text-align: left; /* Ajuste para alinear el texto a la izquierda */
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 1; /* Cambia el orden para que el texto aparezca primero */
+    }
+      
+    #presentacion2 .img-container {
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ), url("media/nosotros-vinedo.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        height: 700px;
+        width: 50%;
+        padding-top: 100px;
+        border-radius: 15px;
+        order: 2; /* Cambia el orden para que la imagen aparezca después */
+    }
+        
+    
+
+    
+    #presentacion3 .container{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    
+        
+
+
+    
+
+    #presentacion3 .texto{
+        padding: 0px,30px;
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #presentacion3 .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/store.jpg");
+        display: flex;
+        background-size: cover;
+        background-position: center;
+
+        height: 700px;
+        width: 50%;
+        padding-top: 300px;
+        border-radius: 15px;
+        
+    }
+
+    .container-vino{
+        text-align: center;
+        
+    }
+
+    
+  
+    #nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:url("media/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    color: white;
+    }
+}
+
+
+
+#presentacion .container{
+    text-align: center;
+    padding: 100px 12px;
+    
+}
+
+
+.contacto{
+    background-image: url(media/FONDO-CONTACTO.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+    padding: 250px 10px;
+    margin: auto;
+    width: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font: 30px;
+    margin-bottom: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+form input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+
+}
+
+form textarea{
+
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+
+
+
+
+}
+
+#button-contacto{
+    background: rgb(177, 145, 4);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+#button-contacto:hover{
+    cursor: pointer;
+
+
+}
+
+
+
+.img-gal{
+    padding-bottom: 5px;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+
+    height: 700px;
+    width: 50%;
+    padding-top: 100px;
+    border-radius: 15px;
+
+    
+}
+
+@media(max-width:540px){
+
+    
+
+    #reserva-ya h2{
+    font-size: 1.5em;
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
